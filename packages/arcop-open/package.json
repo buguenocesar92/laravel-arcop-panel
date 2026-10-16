@@ -1,0 +1,22 @@
+{
+  "name": "@hefesto/arcop-open",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "MIT",
+  "description": "Servicio y panel ARCOP independiente de framework, consumible por HTTP desde cualquier lenguaje.",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "start": "node --env-file=.env src/server.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "dependencies": {
+    "express": "5.3.0",
+    "pg": "8.23.1",
+    "jose": "6.2.12",
+    "zod": "4.6.7",
+    "helmet": "8.3.0",
+    "express-rate-limit": "8.7.1"
+  }
+}
